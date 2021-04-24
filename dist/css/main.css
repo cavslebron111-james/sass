@@ -1,0 +1,29 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #ffffff;
+  color: #154879;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  font-family: Helvetica;
+  width: 80%;
+  margin: 0 auto;
+}
+
+.main .main_paragraph {
+  font-weight: 800;
+}
+
+.main .main_paragraph:hover {
+  color: red;
+}
+/*# sourceMappingURL=main.css.map */

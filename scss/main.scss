@@ -1,0 +1,35 @@
+@import './resets';
+@import './variables';
+
+@function weight($weight-name){
+    @return map-get($font-weights,$weight-name);
+}
+
+@mixin flexcenter($direction,$fontfamily){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:$direction;
+    font-family:$fontfamily;
+    
+}
+
+
+body{
+    background-color:$primary-color;
+   
+    color:$text-color;
+    
+}
+.main{
+ @include flexcenter(row,Helvetica);
+    width:80%;
+   margin:0 auto; 
+#{&}_paragraph{
+    font-weight: map-get($font-weights,regular);
+    &:hover{
+        color:red;
+    }
+}
+
+}
